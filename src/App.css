@@ -1,0 +1,90 @@
+.jumbotron {
+  margin-bottom: 0 !important;
+  padding-top: 2em !important;
+  background: rgb(255, 255, 255, 0.8)
+}
+
+.opaque {
+  background: rgb(255, 255, 255, 0);
+  color: white;
+  /* padding-top: 5em; */
+  height: 25em;
+}
+
+.opaque2 {
+  background: rgb(255, 255, 255, 0);
+  color: white;
+  padding-top: 2em;
+  height: 17em;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.image {
+  box-shadow: 6px 5px 5px #000;
+}
+
+.image2 {
+  border: 3px solid white;
+  margin-bottom: 50px;
+}
+
+.background-image {
+  opacity: 0;
+}
+
+hr.style-five {
+  border: 0;
+  height: 0;
+  /* Firefox... */
+  box-shadow: 0 0 10px 1px black;
+  width: 20em;
+}
+
+hr.style-five:after {
+  /* Not really supposed to work, but does */
+  content: "\00a0";
+  /* Prevent margin collapse */
+}
+
+body {
+  position: absolute;
+  text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+  body {
+      text-align: center;
+      background: rgb(255, 255, 255, .3)
+  }
+  hr.style-five {
+      border: 0;
+      height: 0;
+      /* Firefox... */
+      box-shadow: 0 0 10px 1px black;
+      width: 30em;
+  }
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
